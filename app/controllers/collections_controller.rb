@@ -1,4 +1,6 @@
 class CollectionsController < ApplicationController
+  http_basic_authenticate_with name: "justin", password: "justin"
+
   before_action :set_collection, only: [:show, :edit, :update, :destroy]
 
   # GET /collections
