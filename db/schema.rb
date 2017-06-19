@@ -10,10 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170619130257) do
+ActiveRecord::Schema.define(version: 20170619153322) do
 
   create_table "albums", force: :cascade do |t|
-    t.string "title", null: false
+    t.string "title"
     t.string "description"
     t.integer "collection_id"
     t.datetime "created_at", null: false
@@ -22,16 +22,17 @@ ActiveRecord::Schema.define(version: 20170619130257) do
   end
 
   create_table "collections", force: :cascade do |t|
-    t.string "title", null: false
+    t.string "title"
     t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "image"
   end
 
   create_table "photos", force: :cascade do |t|
-    t.string "name", null: false
+    t.string "name"
     t.text "description"
-    t.string "path", null: false
+    t.string "path"
     t.datetime "date_time_original"
     t.integer "width"
     t.integer "height"

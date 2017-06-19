@@ -10,6 +10,10 @@
   <%= @collection.description %>
 </p>
 
+<p>
+  <%= image_tag @collection.image_url(:thumb) if @collection.image? %>
+</p>
+
 <h2>Albums</h2>
 <table>
   <thead>
