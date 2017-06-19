@@ -10,6 +10,11 @@ rails generate scaffold Album title:string description:string collection:referen
 rails generate scaffold Album title:string description:string collection:references
 ```
 
+## Deps
+
+https://github.com/carrierwaveuploader/carrierwave
+http://railscasts.com/episodes/253-carrierwave-file-uploads
+
 Things you may want to cover:
 
 * Ruby version
