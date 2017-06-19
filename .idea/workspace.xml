@@ -1,7 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="90d4ae3c-657f-42fc-91c3-9520869e7c3e" name="Default" comment="" />
+    <list default="true" id="be11e2e3-a7ca-404b-b730-eed5e30b1f8a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/albums.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/collections.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/albums.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/collections.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/albums_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/collections_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/albums_helper.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/collections_helper.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/album.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/collection.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/albums/_album.json.jbuilder" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/albums/_form.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/albums/edit.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/albums/index.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/albums/index.json.jbuilder" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/albums/new.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/albums/show.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/albums/show.json.jbuilder" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/collections/_collection.json.jbuilder" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/collections/_form.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/collections/edit.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/collections/index.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/collections/index.json.jbuilder" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/collections/new.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/collections/show.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/collections/show.json.jbuilder" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20170619100244_create_collections.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20170619100508_create_albums.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/controllers/albums_controller_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/controllers/collections_controller_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/albums.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/collections.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/models/album_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/models/collection_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/system/albums_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/system/collections_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -9,13 +51,14 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Rakefile" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Rakefile">
+      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/collections/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="360">
+              <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -31,6 +74,17 @@
       <projects_view />
     </option>
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/models/collection.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/app/controllers/albums_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/collections/show.html.erb" />
+      </list>
+    </option>
+  </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
@@ -38,9 +92,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="29" />
-    <option name="width" value="3840" />
-    <option name="height" value="2131" />
+    <option name="y" value="2" />
+    <option name="width" value="960" />
+    <option name="height" value="1198" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -57,8 +111,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -71,9 +123,115 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="time-endless" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="time-endless" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="time-endless" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="time-endless" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="time-endless" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="time-endless" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="collections" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="time-endless" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="time-endless" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="time-endless" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="time-endless" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="time-endless" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="time-endless" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -81,6 +239,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SearchEverywhereHistoryKey" value="collection/s&#9;FILE&#9;file:///home/zhenglai/repo/time-endless/app/views/collections/show.html.erb&#10;albumcon&#9;FILE&#9;file:///home/zhenglai/repo/time-endless/app/controllers/albums_controller.rb&#10;show&#9;FILE&#9;file:///home/zhenglai/repo/time-endless/app/views/collections/show.html.erb&#10;collection.r&#9;FILE&#9;file:///home/zhenglai/repo/time-endless/app/models/collection.rb&#10;models/al&#9;FILE&#9;file:///home/zhenglai/repo/time-endless/app/models/album.rb&#10;albums&#9;FILE&#9;file:///home/zhenglai/repo/time-endless/app/controllers/albums_controller.rb&#10;collections&#9;null&#9;null" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -95,6 +254,13 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+      <method />
+    </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -175,47 +341,44 @@
       <listeners />
       <method />
     </configuration>
-    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-    </configuration>
   </component>
   <component name="SbtLocalSettings">
     <option name="modificationStamps">
       <map>
-        <entry key="$USER_HOME$/repo/adapter-tmp" value="5938901104592" />
-        <entry key="$USER_HOME$/repo/adnxg/adnxg-dsp-core" value="1482821761963" />
-        <entry key="$USER_HOME$/repo/akka-quest" value="1486463627921" />
-        <entry key="$USER_HOME$/repo/db-migration-lib" value="7433168177366" />
-        <entry key="$USER_HOME$/repo/di-event-muxer" value="5967268436956" />
-        <entry key="$USER_HOME$/repo/dsp-core-api" value="1485337578389" />
-        <entry key="$USER_HOME$/repo/dsp-core-click-segment-stream" value="5912920023000" />
-        <entry key="$USER_HOME$/repo/dsp-core-model" value="5935095923421" />
-        <entry key="$USER_HOME$/repo/dsp-core-segment-api" value="7416440056960" />
-        <entry key="$USER_HOME$/repo/dsp-core-segment-click-stream" value="7422224716687" />
-        <entry key="$USER_HOME$/repo/dsp-core-segment-dmp-vpon-adapter" value="5933302547336" />
-        <entry key="$USER_HOME$/repo/dsp-core-segment-dmp-vpon-downloader" value="5930692701377" />
-        <entry key="$USER_HOME$/repo/dsp-core-segment-meta" value="7423250392621" />
-        <entry key="$USER_HOME$/repo/dsp-core-segment-user-stream" value="5931230156865" />
-        <entry key="$USER_HOME$/repo/dsp-core-segment-user-uploading-adapter" value="5933007912508" />
-        <entry key="$USER_HOME$/repo/dsp-core-segment-uu" value="5933648136240" />
-        <entry key="$USER_HOME$/repo/dsp-core-user-segment-stream" value="5911627904000" />
-        <entry key="$USER_HOME$/repo/dsp-reporting/reporting-api" value="1486954124473" />
-        <entry key="$USER_HOME$/repo/finagle-example" value="1478168134000" />
-        <entry key="$USER_HOME$/repo/migration-tool" value="8908352856000" />
-        <entry key="$USER_HOME$/repo/mysql-looter" value="1487128364663" />
-        <entry key="$USER_HOME$/repo/sbt-giter8-resolver" value="1486956305236" />
-        <entry key="$USER_HOME$/repo/sbt-skel" value="8921801008352" />
-        <entry key="$USER_HOME$/repo/scala-forklift" value="7433061059570" />
-        <entry key="$USER_HOME$/repo/scala-mania" value="1480141142000" />
-        <entry key="$USER_HOME$/repo/seg-user" value="5912014812000" />
-        <entry key="$USER_HOME$/repo/ssp-archive" value="1489400776724" />
-        <entry key="$USER_HOME$/repo/ssp-edge" value="1488259591606" />
-        <entry key="$USER_HOME$/repo/ssp-edge-sink" value="1491931132114" />
-        <entry key="$USER_HOME$/repo/ssp-etl" value="1491026286323" />
-        <entry key="$USER_HOME$/repo/ssp-flatten" value="1491794539900" />
-        <entry key="$USER_HOME$/repo/ssp-reporting" value="7459838317384" />
-        <entry key="$USER_HOME$/repo/ssp-reporting-new" value="7453868519182" />
-        <entry key="$USER_HOME$/repo/ssp-simulator-dsp" value="1487128695014" />
+        <entry key="$PROJECT_DIR$/../adapter-tmp" value="5938901104592" />
+        <entry key="$PROJECT_DIR$/../adnxg/adnxg-dsp-core" value="1482821761963" />
+        <entry key="$PROJECT_DIR$/../akka-quest" value="1486463627921" />
+        <entry key="$PROJECT_DIR$/../db-migration-lib" value="7433168177366" />
+        <entry key="$PROJECT_DIR$/../di-event-muxer" value="5967268436956" />
+        <entry key="$PROJECT_DIR$/../dsp-core-api" value="1485337578389" />
+        <entry key="$PROJECT_DIR$/../dsp-core-click-segment-stream" value="5912920023000" />
+        <entry key="$PROJECT_DIR$/../dsp-core-model" value="5935095923421" />
+        <entry key="$PROJECT_DIR$/../dsp-core-segment-api" value="7416440056960" />
+        <entry key="$PROJECT_DIR$/../dsp-core-segment-click-stream" value="7422224716687" />
+        <entry key="$PROJECT_DIR$/../dsp-core-segment-dmp-vpon-adapter" value="5933302547336" />
+        <entry key="$PROJECT_DIR$/../dsp-core-segment-dmp-vpon-downloader" value="5930692701377" />
+        <entry key="$PROJECT_DIR$/../dsp-core-segment-meta" value="7423250392621" />
+        <entry key="$PROJECT_DIR$/../dsp-core-segment-user-stream" value="5931230156865" />
+        <entry key="$PROJECT_DIR$/../dsp-core-segment-user-uploading-adapter" value="5933007912508" />
+        <entry key="$PROJECT_DIR$/../dsp-core-segment-uu" value="5933648136240" />
+        <entry key="$PROJECT_DIR$/../dsp-core-user-segment-stream" value="5911627904000" />
+        <entry key="$PROJECT_DIR$/../dsp-reporting/reporting-api" value="1486954124473" />
+        <entry key="$PROJECT_DIR$/../finagle-example" value="1478168134000" />
+        <entry key="$PROJECT_DIR$/../migration-tool" value="8908352856000" />
+        <entry key="$PROJECT_DIR$/../mysql-looter" value="1487128364663" />
+        <entry key="$PROJECT_DIR$/../sbt-giter8-resolver" value="1486956305236" />
+        <entry key="$PROJECT_DIR$/../sbt-skel" value="8921801008352" />
+        <entry key="$PROJECT_DIR$/../scala-forklift" value="7433061059570" />
+        <entry key="$PROJECT_DIR$/../scala-mania" value="1480141142000" />
+        <entry key="$PROJECT_DIR$/../seg-user" value="5912014812000" />
+        <entry key="$PROJECT_DIR$/../ssp-archive" value="1489400776724" />
+        <entry key="$PROJECT_DIR$/../ssp-edge" value="1488259591606" />
+        <entry key="$PROJECT_DIR$/../ssp-edge-sink" value="1491931132114" />
+        <entry key="$PROJECT_DIR$/../ssp-etl" value="1491026286323" />
+        <entry key="$PROJECT_DIR$/../ssp-flatten" value="1491794539900" />
+        <entry key="$PROJECT_DIR$/../ssp-reporting" value="7459838317384" />
+        <entry key="$PROJECT_DIR$/../ssp-reporting-new" value="7453868519182" />
+        <entry key="$PROJECT_DIR$/../ssp-simulator-dsp" value="1487128695014" />
         <entry key="$USER_HOME$/src/dsp-core-segment-click-stream" value="5927513328596" />
         <entry key="$USER_HOME$/src/dsp-core-segment-dmp-vpon-adapter" value="5927513388268" />
         <entry key="$USER_HOME$/src/dsp-core-segment-dmp-vpon-downloader" value="5927513429268" />
@@ -231,6 +394,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="90d4ae3c-657f-42fc-91c3-9520869e7c3e" name="Default" comment="" />
@@ -243,33 +409,52 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37000" />
+    <option name="totallyTimeSpent" value="2147000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="29" width="3840" height="2131" extended-state="6" />
+    <frame x="0" y="2" width="960" height="1198" extended-state="4" />
     <editor active="true" />
     <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Jenkins" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Jenkins" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -288,6 +473,165 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/photo_extractor.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="9" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+          <folding>
+            <marker date="1497866283973" expanded="true" signature="673:831" ph="##..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rakefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/collections_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+          <folding>
+            <marker date="1497866564020" expanded="true" signature="27:2026" ph=" ... end" />
+            <marker date="1497866564020" expanded="true" signature="128:172" ph="##..." />
+            <marker date="1497866564020" expanded="true" signature="184:224" ph=" ... end" />
+            <marker date="1497866564020" expanded="true" signature="228:276" ph="##..." />
+            <marker date="1497866564020" expanded="true" signature="287:293" ph=" ... end" />
+            <marker date="1497866564020" expanded="true" signature="329:368" ph=" ... end" />
+            <marker date="1497866564020" expanded="true" signature="408:414" ph=" ... end" />
+            <marker date="1497866564020" expanded="true" signature="418:464" ph="##..." />
+            <marker date="1497866564020" expanded="true" signature="477:915" ph=" ... end" />
+            <marker date="1497866564020" expanded="true" signature="546:909" ph="do ... end" />
+            <marker date="1497866564020" expanded="true" signature="564:901" ph="if ... end" />
+            <marker date="1497866564020" expanded="true" signature="604:679" ph="{ ... }" />
+            <marker date="1497866564020" expanded="true" signature="700:757" ph="{ ... }" />
+            <marker date="1497866564020" expanded="true" signature="789:804" ph="{ ... }" />
+            <marker date="1497866564020" expanded="true" signature="825:891" ph="{ ... }" />
+            <marker date="1497866564020" expanded="true" signature="919:979" ph="##..." />
+            <marker date="1497866564020" expanded="true" signature="992:1394" ph=" ... end" />
+            <marker date="1497866564020" expanded="true" signature="1008:1388" ph="do ... end" />
+            <marker date="1497866564020" expanded="true" signature="1026:1380" ph="if ... end" />
+            <marker date="1497866564020" expanded="true" signature="1087:1162" ph="{ ... }" />
+            <marker date="1497866564020" expanded="true" signature="1183:1235" ph="{ ... }" />
+            <marker date="1497866564020" expanded="true" signature="1267:1283" ph="{ ... }" />
+            <marker date="1497866564020" expanded="true" signature="1304:1370" ph="{ ... }" />
+            <marker date="1497866564020" expanded="true" signature="1398:1452" ph="##..." />
+            <marker date="1497866564020" expanded="true" signature="1466:1670" ph=" ... end" />
+            <marker date="1497866564020" expanded="true" signature="1506:1664" ph="do ... end" />
+            <marker date="1497866564020" expanded="true" signature="1536:1617" ph="{ ... }" />
+            <marker date="1497866564020" expanded="true" signature="1636:1656" ph="{ ... }" />
+            <marker date="1497866564020" expanded="true" signature="1778:1835" ph=" ... end" />
+            <marker date="1497866564020" expanded="true" signature="1951:2022" ph=" ... end" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="144">
+            <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/application_record.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="8" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+          <folding>
+            <marker date="1497866283973" expanded="true" signature="23:77" ph=" ... end" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/album.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding>
+            <marker date="1497866708964" expanded="true" signature="11:60" ph=" ... end" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/collection.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+          <folding>
+            <marker date="1497866933761" expanded="true" signature="16:116" ph=" ... end" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <marker date="1497867260643" expanded="true" signature="30:194" ph="do ... end" />
+            <marker date="1497867260643" expanded="true" signature="58:88" ph="do ... end" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/albums_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+          <folding>
+            <marker date="1497868094276" expanded="true" signature="22:2018" ph=" ... end" />
+            <marker date="1497868094276" expanded="true" signature="118:152" ph="##..." />
+            <marker date="1497868094276" expanded="true" signature="164:194" ph=" ... end" />
+            <marker date="1497868094276" expanded="true" signature="198:236" ph="##..." />
+            <marker date="1497868094276" expanded="true" signature="247:253" ph=" ... end" />
+            <marker date="1497868094276" expanded="true" signature="284:313" ph=" ... end" />
+            <marker date="1497868094276" expanded="true" signature="348:354" ph=" ... end" />
+            <marker date="1497868094276" expanded="true" signature="358:394" ph="##..." />
+            <marker date="1497868094276" expanded="true" signature="407:981" ph=" ... end" />
+            <marker date="1497868094276" expanded="true" signature="608:975" ph="##..." />
+            <marker date="1497868094276" expanded="true" signature="985:1035" ph="##..." />
+            <marker date="1497868094276" expanded="true" signature="1048:1420" ph=" ... end" />
+            <marker date="1497868094276" expanded="true" signature="1064:1414" ph="do ... end" />
+            <marker date="1497868094276" expanded="true" signature="1082:1406" ph="if ... end" />
+            <marker date="1497868094276" expanded="true" signature="1133:1198" ph="{ ... }" />
+            <marker date="1497868094276" expanded="true" signature="1219:1266" ph="{ ... }" />
+            <marker date="1497868094276" expanded="true" signature="1298:1314" ph="{ ... }" />
+            <marker date="1497868094276" expanded="true" signature="1335:1396" ph="{ ... }" />
+            <marker date="1497868094276" expanded="true" signature="1424:1468" ph="##..." />
+            <marker date="1497868094276" expanded="true" signature="1482:1671" ph=" ... end" />
+            <marker date="1497868094276" expanded="true" signature="1517:1665" ph="do ... end" />
+            <marker date="1497868094276" expanded="true" signature="1547:1618" ph="{ ... }" />
+            <marker date="1497868094276" expanded="true" signature="1637:1657" ph="{ ... }" />
+            <marker date="1497868094276" expanded="true" signature="1774:1821" ph=" ... end" />
+            <marker date="1497868094276" expanded="true" signature="1932:2014" ph=" ... end" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/collections/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
           <folding />
         </state>
       </provider>

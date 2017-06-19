@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @collection.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @collection.description %>
+</p>
+
+<h2>Albums</h2>
+<% @collection.albums.each do |album| %>
+    <p>
+      <strong>Title:</strong>
+      <%= album.title %>
+    </p>
+
+    <p>
+      <strong>Description:</strong>
+      <%= album.description %>
+    </p>
+<% end %>
+
+<h2>Add a Album</h2>
+<%= form_for([@collection, @collection.albums.build]) do |f| %>
+    <p>
+      <%= f.label :title %><br>
+      <%= f.text_field :title %>
+    </p>
+    <p>
+      <%= f.label :description %><br>
+      <%= f.text_area :description %>
+    </p>
+    <p>
+      <%= f.submit %>
+    </p>
+<% end %>
+
+<%= link_to 'Edit', edit_collection_path(@collection) %> |
+<%= link_to 'Back', collections_path %>
