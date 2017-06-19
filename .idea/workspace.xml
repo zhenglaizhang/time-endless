@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="be11e2e3-a7ca-404b-b730-eed5e30b1f8a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/collections_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/collections_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/collection.rb" afterPath="$PROJECT_DIR$/app/models/collection.rb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,11 +15,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="collections_controller.rb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/collections_controller.rb">
+      <file leaf-file-name="collection.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/collection.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="52" lean-forward="false" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
+            <state relative-caret-position="18">
+              <caret line="1" column="38" lean-forward="false" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -37,12 +38,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/models/collection.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/controllers/albums_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/collections/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/collections_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/collection.rb" />
       </list>
     </option>
   </component>
@@ -200,7 +201,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="collections&#9;FILE&#9;file:///home/zhenglai/repo/time-endless/app/controllers/collections_controller.rb&#10;collection/s&#9;FILE&#9;file:///home/zhenglai/repo/time-endless/app/views/collections/show.html.erb&#10;albumcon&#9;FILE&#9;file:///home/zhenglai/repo/time-endless/app/controllers/albums_controller.rb&#10;show&#9;FILE&#9;file:///home/zhenglai/repo/time-endless/app/views/collections/show.html.erb&#10;collection.r&#9;FILE&#9;file:///home/zhenglai/repo/time-endless/app/models/collection.rb&#10;models/al&#9;FILE&#9;file:///home/zhenglai/repo/time-endless/app/models/album.rb&#10;albums&#9;FILE&#9;file:///home/zhenglai/repo/time-endless/app/controllers/albums_controller.rb" />
+    <property name="SearchEverywhereHistoryKey" value="collection&#9;FILE&#9;file:///home/zhenglai/repo/time-endless/app/models/collection.rb&#10;collection_con&#9;FILE&#9;file:///home/zhenglai/repo/time-endless/app/controllers/collections_controller.rb&#10;collections&#9;FILE&#9;file:///home/zhenglai/repo/time-endless/app/controllers/collections_controller.rb&#10;collection/s&#9;FILE&#9;file:///home/zhenglai/repo/time-endless/app/views/collections/show.html.erb&#10;albumcon&#9;FILE&#9;file:///home/zhenglai/repo/time-endless/app/controllers/albums_controller.rb&#10;show&#9;FILE&#9;file:///home/zhenglai/repo/time-endless/app/views/collections/show.html.erb&#10;collection.r&#9;FILE&#9;file:///home/zhenglai/repo/time-endless/app/models/collection.rb&#10;models/al&#9;FILE&#9;file:///home/zhenglai/repo/time-endless/app/models/album.rb&#10;albums&#9;FILE&#9;file:///home/zhenglai/repo/time-endless/app/controllers/albums_controller.rb" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -370,7 +371,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2836000" />
+    <option name="totallyTimeSpent" value="3041000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="2" width="960" height="1198" extended-state="4" />
@@ -487,16 +488,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/collection.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-          <folding>
-            <marker date="1497866933761" expanded="true" signature="16:116" ph=" ... end" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -570,8 +561,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/collections_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="52" lean-forward="false" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
+        <state relative-caret-position="360">
+          <caret line="20" column="31" lean-forward="false" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+          <folding>
+            <marker date="1497869430238" expanded="true" signature="27:2234" ph=" ... end" />
+            <marker date="1497869430238" expanded="true" signature="120:294" ph="##..." />
+            <marker date="1497869430238" expanded="true" signature="372:416" ph="##..." />
+            <marker date="1497869430238" expanded="true" signature="428:468" ph=" ... end" />
+            <marker date="1497869430238" expanded="true" signature="472:520" ph="##..." />
+            <marker date="1497869430238" expanded="true" signature="531:537" ph=" ... end" />
+            <marker date="1497869430238" expanded="true" signature="573:612" ph=" ... end" />
+            <marker date="1497869430238" expanded="true" signature="652:658" ph=" ... end" />
+            <marker date="1497869430238" expanded="true" signature="662:708" ph="##..." />
+            <marker date="1497869430238" expanded="true" signature="721:1151" ph=" ... end" />
+            <marker date="1497869430238" expanded="true" signature="790:1145" ph="do ... end" />
+            <marker date="1497869430238" expanded="true" signature="808:1137" ph="if ... end" />
+            <marker date="1497869430238" expanded="true" signature="848:921" ph="{ ... }" />
+            <marker date="1497869430238" expanded="true" signature="942:997" ph="{ ... }" />
+            <marker date="1497869430238" expanded="true" signature="1029:1042" ph="{ ... }" />
+            <marker date="1497869430238" expanded="true" signature="1063:1127" ph="{ ... }" />
+            <marker date="1497869430238" expanded="true" signature="1155:1215" ph="##..." />
+            <marker date="1497869430238" expanded="true" signature="1228:1622" ph=" ... end" />
+            <marker date="1497869430238" expanded="true" signature="1244:1616" ph="do ... end" />
+            <marker date="1497869430238" expanded="true" signature="1262:1608" ph="if ... end" />
+            <marker date="1497869430238" expanded="true" signature="1323:1396" ph="{ ... }" />
+            <marker date="1497869430238" expanded="true" signature="1417:1467" ph="{ ... }" />
+            <marker date="1497869430238" expanded="true" signature="1499:1513" ph="{ ... }" />
+            <marker date="1497869430238" expanded="true" signature="1534:1598" ph="{ ... }" />
+            <marker date="1497869430238" expanded="true" signature="1626:1680" ph="##..." />
+            <marker date="1497869430238" expanded="true" signature="1694:1894" ph=" ... end" />
+            <marker date="1497869430238" expanded="true" signature="1734:1888" ph="do ... end" />
+            <marker date="1497869430238" expanded="true" signature="1764:1843" ph="{ ... }" />
+            <marker date="1497869430238" expanded="true" signature="1862:1880" ph="{ ... }" />
+            <marker date="1497869430238" expanded="true" signature="1998:2051" ph=" ... end" />
+            <marker date="1497869430238" expanded="true" signature="2163:2230" ph=" ... end" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/collection.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="38" lean-forward="false" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
           <folding />
         </state>
       </provider>

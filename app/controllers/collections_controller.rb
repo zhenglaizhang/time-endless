@@ -1,5 +1,7 @@
 class CollectionsController < ApplicationController
   http_basic_authenticate_with name: "justin", password: "justin"
+  # http_basic_authenticate_with name: "justin", password: "justin", only: [: destroy]
+  # http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show]
 
   before_action :set_collection, only: [:show, :edit, :update, :destroy]
 
@@ -30,11 +32,11 @@ class CollectionsController < ApplicationController
 
     respond_to do |format|
       if @collection.save
-        format.html { redirect_to @collection, notice: 'Collection was successfully created.' }
-        format.json { render :show, status: :created, location: @collection }
+        format.html {redirect_to @collection, notice: 'Collection was successfully created.'}
+        format.json {render :show, status: :created, location: @collection}
       else
-        format.html { render :new }
-        format.json { render json: @collection.errors, status: :unprocessable_entity }
+        format.html {render :new}
+        format.json {render json: @collection.errors, status: :unprocessable_entity}
       end
     end
   end
@@ -44,11 +46,11 @@ class CollectionsController < ApplicationController
   def update
     respond_to do |format|
       if @collection.update(collection_params)
-        format.html { redirect_to @collection, notice: 'Collection was successfully updated.' }
-        format.json { render :show, status: :ok, location: @collection }
+        format.html {redirect_to @collection, notice: 'Collection was successfully updated.'}
+        format.json {render :show, status: :ok, location: @collection}
       else
-        format.html { render :edit }
-        format.json { render json: @collection.errors, status: :unprocessable_entity }
+        format.html {render :edit}
+        format.json {render json: @collection.errors, status: :unprocessable_entity}
       end
     end
   end
@@ -58,19 +60,19 @@ class CollectionsController < ApplicationController
   def destroy
     @collection.destroy
     respond_to do |format|
-      format.html { redirect_to collections_url, notice: 'Collection was successfully destroyed.' }
-      format.json { head :no_content }
+      format.html {redirect_to collections_url, notice: 'Collection was successfully destroyed.'}
+      format.json {head :no_content}
     end
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_collection
-      @collection = Collection.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_collection
+    @collection = Collection.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def collection_params
-      params.require(:collection).permit(:title, :description)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def collection_params
+    params.require(:collection).permit(:title, :description)
+  end
 end
