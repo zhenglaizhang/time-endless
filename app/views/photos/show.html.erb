@@ -1,0 +1,84 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @photo.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @photo.description %>
+</p>
+
+<p>
+  <strong>Path:</strong>
+  <%= @photo.path %>
+</p>
+
+<p>
+  <strong>Date time original:</strong>
+  <%= @photo.date_time_original %>
+</p>
+
+<p>
+  <strong>Width:</strong>
+  <%= @photo.width %>
+</p>
+
+<p>
+  <strong>Height:</strong>
+  <%= @photo.height %>
+</p>
+
+<p>
+  <strong>Exposure time:</strong>
+  <%= @photo.exposure_time %>
+</p>
+
+<p>
+  <strong>F number:</strong>
+  <%= @photo.f_number %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @photo.model %>
+</p>
+
+<p>
+  <strong>Make:</strong>
+  <%= @photo.make %>
+</p>
+
+<p>
+  <strong>Copyright:</strong>
+  <%= @photo.copyright %>
+</p>
+
+<p>
+  <strong>Iso speed ratings:</strong>
+  <%= @photo.iso_speed_ratings %>
+</p>
+
+<p>
+  <strong>Aperture value:</strong>
+  <%= @photo.aperture_value %>
+</p>
+
+<p>
+  <strong>Max aperture value:</strong>
+  <%= @photo.max_aperture_value %>
+</p>
+
+<p>
+  <strong>Focal length:</strong>
+  <%= @photo.focal_length %>
+</p>
+
+<p>
+  <strong>Album:</strong>
+  <%= @photo.album %>
+</p>
+
+<%= link_to 'Edit', edit_photo_path(@photo) %> |
+<%= link_to 'Back', photos_path %>

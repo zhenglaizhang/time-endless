@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  path: MyString
+  date_time_original: 2017-06-19 21:02:57
+  width: 1
+  height: 1
+  exposure_time: 1.5
+  f_number: 
+  model: MyString
+  make: MyString
+  copyright: MyString
+  iso_speed_ratings: 1
+  aperture_value: 1.5
+  max_aperture_value: 1.5
+  focal_length: 1.5
+  album: one
+
+two:
+  name: MyString
+  description: MyText
+  path: MyString
+  date_time_original: 2017-06-19 21:02:57
+  width: 1
+  height: 1
+  exposure_time: 1.5
+  f_number: 
+  model: MyString
+  make: MyString
+  copyright: MyString
+  iso_speed_ratings: 1
+  aperture_value: 1.5
+  max_aperture_value: 1.5
+  focal_length: 1.5
+  album: two

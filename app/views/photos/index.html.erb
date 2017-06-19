@@ -1,0 +1,57 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Photos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Path</th>
+      <th>Date time original</th>
+      <th>Width</th>
+      <th>Height</th>
+      <th>Exposure time</th>
+      <th>F number</th>
+      <th>Model</th>
+      <th>Make</th>
+      <th>Copyright</th>
+      <th>Iso speed ratings</th>
+      <th>Aperture value</th>
+      <th>Max aperture value</th>
+      <th>Focal length</th>
+      <th>Album</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @photos.each do |photo| %>
+      <tr>
+        <td><%= photo.name %></td>
+        <td><%= photo.description %></td>
+        <td><%= photo.path %></td>
+        <td><%= photo.date_time_original %></td>
+        <td><%= photo.width %></td>
+        <td><%= photo.height %></td>
+        <td><%= photo.exposure_time %></td>
+        <td><%= photo.f_number %></td>
+        <td><%= photo.model %></td>
+        <td><%= photo.make %></td>
+        <td><%= photo.copyright %></td>
+        <td><%= photo.iso_speed_ratings %></td>
+        <td><%= photo.aperture_value %></td>
+        <td><%= photo.max_aperture_value %></td>
+        <td><%= photo.focal_length %></td>
+        <td><%= photo.album %></td>
+        <td><%= link_to 'Show', photo %></td>
+        <td><%= link_to 'Edit', edit_photo_path(photo) %></td>
+        <td><%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Photo', new_photo_path %>

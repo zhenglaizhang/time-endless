@@ -7,7 +7,7 @@ application up and running.
 ```
 rails generate scaffold Collection title:string description:string
 rails generate scaffold Album title:string description:string collection:references
-rails generate scaffold Photo name:string path:string taken_at:time width:integer height:integer expose_time:integer f_number:double model:string
+rails generate scaffold Photo name:string description:text path:string date_time_original:datetime width:integer height:integer exposure_time:float f_number:float model:string make:string copyright:string iso_speed_ratings:integer aperture_value:float max_aperture_value:float focal_length:float
 ```
 
 ## Deps
