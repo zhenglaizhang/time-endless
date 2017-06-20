@@ -47,3 +47,8 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+## Others
+
+- Try `git rm -r --cached .idea` in your terminal. It disables the change tracking.
+
