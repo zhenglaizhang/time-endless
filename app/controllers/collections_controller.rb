@@ -30,6 +30,8 @@ class CollectionsController < ApplicationController
   def create
     @collection = Collection.new(collection_params)
 
+    p @collectio
+
     respond_to do |format|
       if @collection.save
         format.html {redirect_to @collection, notice: 'Collection was successfully created.'}

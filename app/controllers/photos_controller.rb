@@ -24,17 +24,23 @@ class PhotosController < ApplicationController
   # POST /photos
   # POST /photos.json
   def create
-    @photo = Photo.new(photo_params)
+    @album = Album.find(params[:album_id])
+    p @album.photos.size
+    @photo = @album.photos.create(photo_params)
+    p @photo
+    redirect_to album_path(@album)
 
-    respond_to do |format|
-      if @photo.save
-        format.html { redirect_to @photo, notice: 'Photo was successfully created.' }
-        format.json { render :show, status: :created, location: @photo }
-      else
-        format.html { render :new }
-        format.json { render json: @photo.errors, status: :unprocessable_entity }
-      end
-    end
+      # @photo = Photo.new(photo_params)
+      #
+      # respond_to do |format|
+      #   if @photo.save
+      #     format.html { redirect_to @photo, notice: 'Photo was successfully created.' }
+      #     format.json { render :show, status: :created, location: @photo }
+      #   else
+      #     format.html { render :new }
+      #     format.json { render json: @photo.errors, status: :unprocessable_entity }
+      #   end
+      # end
   end
 
   # PATCH/PUT /photos/1
@@ -42,11 +48,11 @@ class PhotosController < ApplicationController
   def update
     respond_to do |format|
       if @photo.update(photo_params)
-        format.html { redirect_to @photo, notice: 'Photo was successfully updated.' }
-        format.json { render :show, status: :ok, location: @photo }
+        format.html {redirect_to @photo, notice: 'Photo was successfully updated.'}
+        format.json {render :show, status: :ok, location: @photo}
       else
-        format.html { render :edit }
-        format.json { render json: @photo.errors, status: :unprocessable_entity }
+        format.html {render :edit}
+        format.json {render json: @photo.errors, status: :unprocessable_entity}
       end
     end
   end
@@ -56,19 +62,19 @@ class PhotosController < ApplicationController
   def destroy
     @photo.destroy
     respond_to do |format|
-      format.html { redirect_to photos_url, notice: 'Photo was successfully destroyed.' }
-      format.json { head :no_content }
+      format.html {redirect_to photos_url, notice: 'Photo was successfully destroyed.'}
+      format.json {head :no_content}
     end
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_photo
-      @photo = Photo.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_photo
+    @photo = Photo.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def photo_params
-      params.require(:photo).permit(:name, :description, :path, :date_time_original, :width, :height, :exposure_time, :f_number, :model, :make, :copyright, :iso_speed_ratings, :aperture_value, :max_aperture_value, :focal_length, :album_id)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def photo_params
+    params.require(:photo).permit(:name, :description, :photo, :path, :date_time_original, :width, :height, :exposure_time, :f_number, :model, :make, :copyright, :iso_speed_ratings, :aperture_value, :max_aperture_value, :focal_length, :album_id)
+  end
 end

@@ -1,9 +1,14 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <%= image_tag @photo.photo_url(:thumb) if @photo.photo? %>
+</p>
+
+<p>
   <strong>Name:</strong>
   <%= @photo.name %>
 </p>
+
 
 <p>
   <strong>Description:</strong>
@@ -81,4 +86,4 @@
 </p>
 
 <%= link_to 'Edit', edit_photo_path(@photo) %> |
-<%= link_to 'Back', photos_path %>
+<%= link_to 'Back', photo_path %>

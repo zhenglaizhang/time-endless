@@ -10,6 +10,10 @@
   <%= @album.description %>
 </p>
 
+<p>
+  abc<%= @album.photos.length %>abc
+</p>
+
 <h2>Photos</h2>
 <table class="table">
   <thead>
@@ -25,8 +29,8 @@
       <tr>
         <td><%= photo.name %></td>
         <td><%= photo.description %></td>
-        <td><%= link_to 'Show', album_photo_url(@album, photo) %></td>
-        <td><%= link_to 'Edit', edit_album_photo_path(@album, photo) %></td>
+        <td><%= link_to 'Show', album_photos_url(@album, photo) %></td>
+        <td><%= link_to 'Edit', edit_photo_path(@album, photo) %></td>
         <td><%= link_to "Destroy", album_path(photo),
                         :method => :delete, :confirm => "Really?" %></td>
       </tr>
@@ -35,7 +39,7 @@
 </table>
 
 <h2>Add a Photo</h2>
-<%= form_for [@album, @album.photos.build] do |f| %>
+<%= form_for [@album, @album.photos.build], :html => {:multipart => true} do |f| %>
     <p>
       <%= f.label :name %><br>
       <%= f.text_field :name %>
@@ -43,6 +47,10 @@
     <p>
       <%= f.label :description %><br>
       <%= f.text_area :description %>
+    </p>
+    <p>
+      <%= f.label :photo %>
+      <%= f.file_field :photo %>
     </p>
     <p>
       <%= f.submit %>

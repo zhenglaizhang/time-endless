@@ -1,97 +1,101 @@
-<%= form_with(model: photo, local: true) do |form| %>
-  <% if photo.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(photo.errors.count, "error") %> prohibited this photo from being saved:</h2>
+<%= form_with(model: photo, local: true, :html => {:multipart => true}) do |form| %>
+    <% if photo.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(photo.errors.count, "error") %> prohibited this photo from being saved:</h2>
 
-      <ul>
-      <% photo.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+          <ul>
+            <% photo.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="field">
+      <%= form.label :name %>
+      <%= form.text_field :name, id: :photo_name %>
     </div>
-  <% end %>
+    <div>
+      <%= form.label :photo %>
+      <%= form.file_field :photo %>
+    </div>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name, id: :photo_name %>
-  </div>
+    <div class="field">
+      <%= form.label :description %>
+      <%= form.text_area :description, id: :photo_description %>
+    </div>
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description, id: :photo_description %>
-  </div>
+    <div class="field">
+      <%= form.label :path %>
+      <%= form.text_field :path, id: :photo_path %>
+    </div>
 
-  <div class="field">
-    <%= form.label :path %>
-    <%= form.text_field :path, id: :photo_path %>
-  </div>
+    <div class="field">
+      <%= form.label :date_time_original %>
+      <%= form.datetime_select :date_time_original, id: :photo_date_time_original %>
+    </div>
 
-  <div class="field">
-    <%= form.label :date_time_original %>
-    <%= form.datetime_select :date_time_original, id: :photo_date_time_original %>
-  </div>
+    <div class="field">
+      <%= form.label :width %>
+      <%= form.number_field :width, id: :photo_width %>
+    </div>
 
-  <div class="field">
-    <%= form.label :width %>
-    <%= form.number_field :width, id: :photo_width %>
-  </div>
+    <div class="field">
+      <%= form.label :height %>
+      <%= form.number_field :height, id: :photo_height %>
+    </div>
 
-  <div class="field">
-    <%= form.label :height %>
-    <%= form.number_field :height, id: :photo_height %>
-  </div>
+    <div class="field">
+      <%= form.label :exposure_time %>
+      <%= form.text_field :exposure_time, id: :photo_exposure_time %>
+    </div>
 
-  <div class="field">
-    <%= form.label :exposure_time %>
-    <%= form.text_field :exposure_time, id: :photo_exposure_time %>
-  </div>
+    <div class="field">
+      <%= form.label :f_number %>
+      <%= form.text_field :f_number, id: :photo_f_number %>
+    </div>
 
-  <div class="field">
-    <%= form.label :f_number %>
-    <%= form.text_field :f_number, id: :photo_f_number %>
-  </div>
+    <div class="field">
+      <%= form.label :model %>
+      <%= form.text_field :model, id: :photo_model %>
+    </div>
 
-  <div class="field">
-    <%= form.label :model %>
-    <%= form.text_field :model, id: :photo_model %>
-  </div>
+    <div class="field">
+      <%= form.label :make %>
+      <%= form.text_field :make, id: :photo_make %>
+    </div>
 
-  <div class="field">
-    <%= form.label :make %>
-    <%= form.text_field :make, id: :photo_make %>
-  </div>
+    <div class="field">
+      <%= form.label :copyright %>
+      <%= form.text_field :copyright, id: :photo_copyright %>
+    </div>
 
-  <div class="field">
-    <%= form.label :copyright %>
-    <%= form.text_field :copyright, id: :photo_copyright %>
-  </div>
+    <div class="field">
+      <%= form.label :iso_speed_ratings %>
+      <%= form.number_field :iso_speed_ratings, id: :photo_iso_speed_ratings %>
+    </div>
 
-  <div class="field">
-    <%= form.label :iso_speed_ratings %>
-    <%= form.number_field :iso_speed_ratings, id: :photo_iso_speed_ratings %>
-  </div>
+    <div class="field">
+      <%= form.label :aperture_value %>
+      <%= form.text_field :aperture_value, id: :photo_aperture_value %>
+    </div>
 
-  <div class="field">
-    <%= form.label :aperture_value %>
-    <%= form.text_field :aperture_value, id: :photo_aperture_value %>
-  </div>
+    <div class="field">
+      <%= form.label :max_aperture_value %>
+      <%= form.text_field :max_aperture_value, id: :photo_max_aperture_value %>
+    </div>
 
-  <div class="field">
-    <%= form.label :max_aperture_value %>
-    <%= form.text_field :max_aperture_value, id: :photo_max_aperture_value %>
-  </div>
+    <div class="field">
+      <%= form.label :focal_length %>
+      <%= form.text_field :focal_length, id: :photo_focal_length %>
+    </div>
 
-  <div class="field">
-    <%= form.label :focal_length %>
-    <%= form.text_field :focal_length, id: :photo_focal_length %>
-  </div>
+    <div class="field">
+      <%= form.label :album_id %>
+      <%= form.text_field :album_id, id: :photo_album_id %>
+    </div>
 
-  <div class="field">
-    <%= form.label :album_id %>
-    <%= form.text_field :album_id, id: :photo_album_id %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+    <div class="actions">
+      <%= form.submit %>
+    </div>
 <% end %>
