@@ -1,3 +1,5 @@
+require 'exifr'
+
 class PhotosController < ApplicationController
   before_action :set_photo, only: [:show, :edit, :update, :destroy]
 
@@ -25,22 +27,41 @@ class PhotosController < ApplicationController
   # POST /photos.json
   def create
     @album = Album.find(params[:album_id])
-    p @album.photos.size
-    @photo = @album.photos.create(photo_params)
-    p @photo
+
+    # @photo = @album.photos.create(photo_params)
+
+    @photo = Photo.new(photo_params)
+    ep = EXIFR::JPEG.new(photo_params[:photo].tempfile)
+    # set photography attributes
+    @photo.width = ep.width
+    @photo.height = ep.height
+    @photo.date_time_original = ep.date_time_original
+    @photo.exposure_time = ep.exposure_time.to_s
+    @photo.f_number = ep.f_number.to_f
+    @photo.model = ep.model
+    @photo.make = ep.make
+    @photo.copyright = ep.copyright
+    @photo.iso_speed_ratings = ep.iso_speed_ratings
+    @photo.aperture_value = ep.aperture_value
+    @photo.max_aperture_value = ep.max_aperture_value
+    @photo.focal_length = ep.focal_length
+    @photo.album_id = params[:album_id]
+    @photo.save
+
+
     redirect_to album_path(@album)
 
-      # @photo = Photo.new(photo_params)
-      #
-      # respond_to do |format|
-      #   if @photo.save
-      #     format.html { redirect_to @photo, notice: 'Photo was successfully created.' }
-      #     format.json { render :show, status: :created, location: @photo }
-      #   else
-      #     format.html { render :new }
-      #     format.json { render json: @photo.errors, status: :unprocessable_entity }
-      #   end
-      # end
+    # @photo = Photo.new(photo_params)
+    #
+    # respond_to do |format|
+    #   if @photo.save
+    #     format.html { redirect_to @photo, notice: 'Photo was successfully created.' }
+    #     format.json { render :show, status: :created, location: @photo }
+    #   else
+    #     format.html { render :new }
+    #     format.json { render json: @photo.errors, status: :unprocessable_entity }
+    #   end
+    # end
   end
 
   # PATCH/PUT /photos/1
