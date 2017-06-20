@@ -80,10 +80,10 @@
   <%= @photo.focal_length %>
 </p>
 
-<p>
-  <strong>Album:</strong>
-  <%= @photo.album %>
-</p>
+<!--<p>-->
+  <!--<strong>Album:</strong>-->
+  <!--<%= @photo.album %>-->
+<!--</p>-->
 
 <%= link_to 'Edit', edit_photo_path(@photo) %> |
-<%= link_to 'Back', photo_path %>
+<%= link_to 'Back', album_path(@photo.album) %>

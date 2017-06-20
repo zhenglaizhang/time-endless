@@ -27,9 +27,6 @@ class PhotosController < ApplicationController
   # POST /photos.json
   def create
     @album = Album.find(params[:album_id])
-
-    # @photo = @album.photos.create(photo_params)
-
     @photo = Photo.new(photo_params)
     ep = EXIFR::JPEG.new(photo_params[:photo].tempfile)
     # set photography attributes
@@ -83,7 +80,7 @@ class PhotosController < ApplicationController
   def destroy
     @photo.destroy
     respond_to do |format|
-      format.html {redirect_to photos_url, notice: 'Photo was successfully destroyed.'}
+      format.html {redirect_to album_url(@photo.album), notice: 'Photo was successfully destroyed.'}
       format.json {head :no_content}
     end
   end
