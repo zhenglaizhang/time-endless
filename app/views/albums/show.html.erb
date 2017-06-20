@@ -29,9 +29,9 @@
       <tr>
         <td><%= photo.name %></td>
         <td><%= photo.description %></td>
-        <td><%= link_to 'Show', album_photos_url(@album, photo) %></td>
-        <td><%= link_to 'Edit', edit_photo_path(@album, photo) %></td>
-        <td><%= link_to "Destroy", album_path(photo),
+        <td><%= link_to 'Show', photo_url(photo) %></td>
+        <td><%= link_to 'Edit', edit_photo_path(photo) %></td>
+        <td><%= link_to "Destroy", photo_url(photo),
                         :method => :delete, :confirm => "Really?" %></td>
       </tr>
   <% end %>
