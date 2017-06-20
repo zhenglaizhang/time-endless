@@ -1,5 +1,56 @@
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
+
+<style type="text/css">
+  /*!
+ * @file
+ * Metro Style Sheet
+ */
+
+  .metro .glyphicon {
+    margin-top: 20px;
+    font-size: 80px;
+  }
+
+  .metro.row h2 {
+    font-size: 80px;
+    line-height: 70px;
+    margin-top: 5px;
+  }
+
+  .metro.row > a {
+    color: #fff;
+    overflow: hidden;
+    -webkit-transform: translateZ(0);
+  }
+
+  .metro.row > a:hover {
+    text-decoration: none;
+    opacity: 0.7;
+  }
+
+  .metro.grid > a {
+    height: 200px;
+    text-align: center;
+  }
+
+  .metro.grid > a .glyphicon {
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+  }
+
+  .metro.grid > a:hover .glyphicon {
+    font-size: 120px;
+    top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .metro.grid .placeholder {
+    border: 1px solid green;
+  }
+</style>
+
 <style type="text/css">
   .dynamicTile .col-sm-2.col-xs-4 {
     padding: 5px;
@@ -84,6 +135,13 @@
 
     });
 </script>
+<div class="container">
+  <div class="row metro">
+    <a href="#" class="col-xs-12" style="background: #cccccc">
+      <h2>TIME ENDLESS</h2>
+    </a>
+  </div>
+</div>
 <div class="container dynamicTile">
   <div class="row ">
     <div class="col-sm-2 col-xs-4">
@@ -275,62 +333,7 @@
   </div>
 </div>
 
-<style type="text/css">
-  /*!
- * @file
- * Metro Style Sheet
- */
-
-  .metro .glyphicon {
-    margin-top: 20px;
-    font-size: 80px;
-  }
-
-  .metro.row h2 {
-    font-size: 80px;
-    line-height: 70px;
-    margin-top: 5px;
-  }
-
-  .metro.row > a {
-    color: #fff;
-    overflow: hidden;
-    -webkit-transform: translateZ(0);
-  }
-
-  .metro.row > a:hover {
-    text-decoration: none;
-    opacity: 0.7;
-  }
-
-  .metro.grid > a {
-    height: 200px;
-    text-align: center;
-  }
-
-  .metro.grid > a .glyphicon {
-    -webkit-transition: all 0.5s ease-in-out 0s;
-    -moz-transition: all 0.5s ease-in-out 0s;
-    transition: all 0.5s ease-in-out 0s;
-  }
-
-  .metro.grid > a:hover .glyphicon {
-    font-size: 120px;
-    top: 20px;
-    margin-bottom: 50px;
-  }
-
-  .metro.grid .placeholder {
-    border: 1px solid green;
-  }
-</style>
-
 <div class="container">
-  <div class="row metro">
-    <a href="#" class="col-xs-12" style="background: #cccccc">
-      <h2>METRO</h2>
-    </a>
-  </div>
   <div class="row metro grid">
     <a href="#" class="col-sm-4 col-xs-6 " style="background: #f37b53">
       <span class="glyphicon glyphicon-time"></span>
