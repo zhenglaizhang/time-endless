@@ -1,5 +1,68 @@
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
+<style type="text/css">
+  .dynamicTile .col-sm-2.col-xs-4 {
+    padding: 5px;
+  }
+
+  .dynamicTile .col-sm-4.col-xs-8 {
+    padding: 5px;
+  }
+
+  #tile1 {
+    background: rgb(0, 172, 238);
+  }
+
+  #tile2 {
+    background: rgb(243, 243, 243);
+  }
+
+  #tile3 {
+    background: rgb(71, 193, 228);
+  }
+
+  #tile4 {
+    background-image: url('http://handsontek.net/demoimages/tiles/facebook.png');
+    background-size: cover;
+  }
+
+  #tile5 {
+    background: rgb(175, 26, 63);
+  }
+
+  #tile6 {
+    background: rgb(62, 157, 215);
+  }
+
+  #tile7 {
+    background: white;
+  }
+
+  #tile8 {
+    background: rgb(209, 70, 37);
+  }
+
+  #tile9 {
+    background: rgb(0, 142, 0);
+  }
+
+  #tile10 {
+    background: rgb(0, 93, 233);
+  }
+
+  .tilecaption {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    margin: 0 !important;
+    text-align: center;
+    color: white;
+    font-family: Segoe UI;
+    font-weight: lighter;
+  }
+</style>
 <script>
     $(document).ready(function () {
         $(".tile").height($("#tile1").width());
@@ -210,3 +273,100 @@
     </div>
 
   </div>
+</div>
+
+<style type="text/css">
+  /*!
+ * @file
+ * Metro Style Sheet
+ */
+
+  .metro .glyphicon {
+    margin-top: 20px;
+    font-size: 80px;
+  }
+
+  .metro.row h2 {
+    font-size: 80px;
+    line-height: 70px;
+    margin-top: 5px;
+  }
+
+  .metro.row > a {
+    color: #fff;
+    overflow: hidden;
+    -webkit-transform: translateZ(0);
+  }
+
+  .metro.row > a:hover {
+    text-decoration: none;
+    opacity: 0.7;
+  }
+
+  .metro.grid > a {
+    height: 200px;
+    text-align: center;
+  }
+
+  .metro.grid > a .glyphicon {
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+  }
+
+  .metro.grid > a:hover .glyphicon {
+    font-size: 120px;
+    top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .metro.grid .placeholder {
+    border: 1px solid green;
+  }
+</style>
+
+<div class="container">
+  <div class="row metro">
+    <a href="#" class="col-xs-12" style="background: #cccccc">
+      <h2>METRO</h2>
+    </a>
+  </div>
+  <div class="row metro grid">
+    <a href="#" class="col-sm-4 col-xs-6 " style="background: #f37b53">
+      <span class="glyphicon glyphicon-time"></span>
+      <h2>18</h2>
+    </a>
+    <a href="#" class="col-sm-2 col-xs-6 " style="background: #de577b">
+      <span class="glyphicon glyphicon-file"></span>
+      <h2>2</h2>
+    </a>
+    <a href="#" class="col-sm-2 col-xs-6 " style="background: #0a5bc4">
+      <span class="glyphicon glyphicon-hand-right"></span>
+      <h2>3</h2>
+    </a>
+    <a href="#" class="col-sm-4 col-xs-6 " style="background: #bf1e4b">
+      <span class="glyphicon glyphicon-phone"></span>
+      <h2>1</h2>
+    </a>
+    <a href="#" class="col-sm-2 col-xs-6 " style="background: #FFB400">
+      <span class="glyphicon glyphicon-bell"></span>
+      <h2>5</h2>
+    </a>
+    <a href="#" class="col-sm-2 col-xs-6 " style="background: #643ebf">
+      <span class="glyphicon glyphicon-tower"></span>
+      <h2>1</h2>
+    </a>
+    <a href="#" class="col-sm-2 col-xs-6 " style="background: #61b9ff">
+      <span class="glyphicon glyphicon-cloud"></span>
+      <h2>2</h2>
+    </a>
+    <a href="#" class="col-sm-4 col-xs-6 " style="background: #4daf7b">
+      <span class="glyphicon glyphicon-cog"></span>
+      <h2>600</h2>
+    </a>
+    <a href="#" class="col-sm-2 col-xs-6 " style="background: #dc572e">
+      <span class="glyphicon glyphicon-random"></span>
+      <h2>9</h2>
+    </a>
+  </div>
+</div>
