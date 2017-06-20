@@ -27,6 +27,7 @@ rails s
 
 https://github.com/carrierwaveuploader/carrierwave
 http://railscasts.com/episodes/253-carrierwave-file-uploads
+http://getbootstrap.com/css/
 
 Things you may want to cover:
 
