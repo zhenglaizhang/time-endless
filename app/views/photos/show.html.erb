@@ -1,89 +1,159 @@
-<p id="notice"><%= notice %></p>
+<ol class="breadcrumb">
+  <li><a href="<%= collection_path(@photo.album.collection) %>">Collection</a></li>
+  <li><a href="<%= album_path(@photo.album) %>">Album</a></li>
+  <li class="active">Photo</li>
+</ol>
 
-<p>
+<div id="notice"><%= notice %></div>
+
+<div class="row">
   <%= image_tag @photo.photo_url(:thumb) if @photo.photo? %>
-</p>
+</div>
 
-<p>
-  <strong>Name:</strong>
-  <%= @photo.name %>
-</p>
+<div class="row">
+  <div class="col-md-2">
+    <strong>Name:</strong>
+  </div>
+  <div class="col-md-4">
+    <%= @photo.name %>
+  </div>
+</div>
 
 
-<p>
-  <strong>Description:</strong>
-  <%= @photo.description %>
-</p>
+<div class="row">
+  <div class="col-md-2">
+    <strong>Description:</strong>
+  </div>
+  <div class="col-md-4">
+    <%= @photo.description %>
+  </div>
+</div>
 
-<p>
-  <strong>Path:</strong>
-  <%= @photo.path %>
-</p>
+<div class="row">
+  <div class="col-md-2">
+    <strong>Path:</strong>
+  </div>
+  <div class="col-md-4">
+    <%= link_to 'image', @photo.photo.url %>
+  </div>
+</div>
 
-<p>
-  <strong>Date time original:</strong>
-  <%= @photo.date_time_original %>
-</p>
+<div class="row">
+  <div class="col-md-2">
+    <strong>Date time original:</strong>
+  </div>
 
-<p>
-  <strong>Width:</strong>
-  <%= @photo.width %>
-</p>
+  <div class="col-md-4">
+    <%= @photo.date_time_original %>
+  </div>
+</div>
 
-<p>
-  <strong>Height:</strong>
-  <%= @photo.height %>
-</p>
+<div class="row">
+  <div class="col-md-2">
+    <strong>Width:</strong>
+  </div>
 
-<p>
-  <strong>Exposure time:</strong>
-  <%= @photo.exposure_time %>
-</p>
+  <div class="col-md-4">
+    <%= @photo.width %>
+  </div>
+</div>
 
-<p>
-  <strong>F number:</strong>
-  <%= @photo.f_number %>
-</p>
+<div class="row">
+  <div class="col-md-2">
+    <strong>Height:</strong>
+  </div>
 
-<p>
-  <strong>Model:</strong>
-  <%= @photo.model %>
-</p>
+  <div class="col-md-4">
+    <%= @photo.height %>
+  </div>
+</div>
 
-<p>
-  <strong>Make:</strong>
-  <%= @photo.make %>
-</p>
+<div class="row">
+  <div class="col-md-2">
+    <strong>Exposure time:</strong>
+  </div>
+  <div class="col-md-4">
+    <%= @photo.exposure_time %>
+  </div>
+</div>
 
-<p>
-  <strong>Copyright:</strong>
-  <%= @photo.copyright %>
-</p>
+<div class="row">
+  <div class="col-md-2">
+    <strong>F number:</strong>
+  </div>
+  <div class="col-md-4">
+    <%= @photo.f_number %>
+  </div>
+</div>
 
-<p>
-  <strong>Iso speed ratings:</strong>
-  <%= @photo.iso_speed_ratings %>
-</p>
+<div class="row">
+  <div class="col-md-2">
+    <strong>Model:</strong>
+  </div>
+  <div class="col-md-4">
+    <%= @photo.model %>
+  </div>
+</div>
 
-<p>
-  <strong>Aperture value:</strong>
-  <%= @photo.aperture_value %>
-</p>
+<div class="row">
+  <div class="col-md-2">
+    <strong>Make:</strong>
+  </div>
+  <div class="col-md-4">
+    <%= @photo.make %>
+  </div>
+</div>
 
-<p>
-  <strong>Max aperture value:</strong>
-  <%= @photo.max_aperture_value %>
-</p>
+<div class="row">
+  <div class="col-md-2">
+    <strong>Copyright:</strong>
+  </div>
+  <div class="col-md-4">
+    <%= @photo.copyright %>
+  </div>
+</div>
 
-<p>
-  <strong>Focal length:</strong>
-  <%= @photo.focal_length %>
-</p>
+<div class="row">
+  <div class="col-md-2">
+    <strong>Iso speed ratings:</strong>
+  </div>
 
-<!--<p>-->
-  <!--<strong>Album:</strong>-->
-  <!--<%= @photo.album %>-->
-<!--</p>-->
+  <div class="col-md-4">
+    <%= @photo.iso_speed_ratings %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-2">
+    <strong>Aperture value:</strong>
+  </div>
+  <div class="col-md-4">
+    <%= @photo.aperture_value %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-2">
+    <strong>Max aperture value:</strong>
+  </div>
+  <div class="col-md-4">
+    <%= @photo.max_aperture_value %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-2">
+    <strong>Focal length:</strong>
+  </div>
+  <div class="col-md-4">
+    <%= @photo.focal_length %>
+  </div>
+</div>
+
+<!--<div>-->
+<!--<strong>Album:</strong>-->
+<!--<%= @photo.album %>-->
+<!--</div>-->
 
 <%= link_to 'Edit', edit_photo_path(@photo) %> |
 <%= link_to 'Back', album_path(@photo.album) %>
