@@ -1,4 +1,4 @@
-<%= form_with(model: photo, local: true, :html => {:multipart => true}) do |form| %>
+<%= form_with(model: photo, local: true, :html => {:multipart => true, :class => 'form-horizontal'}) do |form| %>
     <% if photo.errors.any? %>
         <div id="error_explanation">
           <h2><%= pluralize(photo.errors.count, "error") %> prohibited this photo from being saved:</h2>
@@ -11,91 +11,92 @@
         </div>
     <% end %>
 
-    <div class="field">
-      <%= form.label :name %>
-      <%= form.text_field :name, id: :photo_name %>
+    <div class="field form-group">
+      <%= form.label :name, class: 'col-md-2' %>
+      <%= form.text_field :name, id: :photo_name, class: 'col-md-4' %>
     </div>
-    <div>
-      <%= form.label :photo %>
-      <%= form.file_field :photo %>
-    </div>
-
-    <div class="field">
-      <%= form.label :description %>
-      <%= form.text_area :description, id: :photo_description %>
+    <div class="field form-group">
+      <%= form.label :photo, class: 'col-md-2' %>
+      <%= form.file_field :photo, class: 'col-md-4' %>
     </div>
 
-    <div class="field">
-      <%= form.label :path %>
-      <%= form.text_field :path, id: :photo_path %>
+    <div class="field form-group">
+      <%= form.label :description, class: 'col-md-2' %>
+      <%= form.text_area :description, id: :photo_description, class: 'col-md-4' %>
     </div>
 
-    <div class="field">
-      <%= form.label :date_time_original %>
-      <%= form.datetime_select :date_time_original, id: :photo_date_time_original %>
+    <div class="field form-group">
+      <%= form.label :path, class: 'col-md-2' %>
+      <%= form.text_field :path, id: :photo_path, class: 'col-md-4' %>
     </div>
 
-    <div class="field">
-      <%= form.label :width %>
-      <%= form.number_field :width, id: :photo_width %>
+
+    <div class="field form-group">
+      <%= form.label :date_time_original, class: 'col-md-2' %>
+      <%= form.datetime_select :date_time_original, id: :photo_date_time_original, class: 'col-md-4' %>
     </div>
 
-    <div class="field">
-      <%= form.label :height %>
-      <%= form.number_field :height, id: :photo_height %>
+    <div class="field form-group">
+      <%= form.label :width, class: 'col-md-2' %>
+      <%= form.number_field :width, id: :photo_width, class: 'col-md-4' %>
     </div>
 
-    <div class="field">
-      <%= form.label :exposure_time %>
-      <%= form.text_field :exposure_time, id: :photo_exposure_time %>
+    <div class="field form-group">
+      <%= form.label :height, class: 'col-md-2' %>
+      <%= form.number_field :height, id: :photo_height, class: 'col-md-4' %>
     </div>
 
-    <div class="field">
-      <%= form.label :f_number %>
-      <%= form.text_field :f_number, id: :photo_f_number %>
+    <div class="field form-group">
+      <%= form.label :exposure_time, class: 'col-md-2' %>
+      <%= form.text_field :exposure_time, id: :photo_exposure_time, class: 'col-md-4' %>
     </div>
 
-    <div class="field">
-      <%= form.label :model %>
-      <%= form.text_field :model, id: :photo_model %>
+    <div class="field form-group">
+      <%= form.label :f_number, class: 'col-md-2' %>
+      <%= form.text_field :f_number, id: :photo_f_number, class: 'col-md-4' %>
     </div>
 
-    <div class="field">
-      <%= form.label :make %>
-      <%= form.text_field :make, id: :photo_make %>
+    <div class="field form-group">
+      <%= form.label :model, class: 'col-md-2' %>
+      <%= form.text_field :model, id: :photo_model, class: 'col-md-4' %>
     </div>
 
-    <div class="field">
-      <%= form.label :copyright %>
-      <%= form.text_field :copyright, id: :photo_copyright %>
+    <div class="field form-group">
+      <%= form.label :make, class: 'col-md-2' %>
+      <%= form.text_field :make, id: :photo_make, class: 'col-md-4' %>
     </div>
 
-    <div class="field">
-      <%= form.label :iso_speed_ratings %>
-      <%= form.number_field :iso_speed_ratings, id: :photo_iso_speed_ratings %>
+    <div class="field form-group">
+      <%= form.label :copyright, class: 'col-md-2' %>
+      <%= form.text_field :copyright, id: :photo_copyright, class: 'col-md-4' %>
     </div>
 
-    <div class="field">
-      <%= form.label :aperture_value %>
-      <%= form.text_field :aperture_value, id: :photo_aperture_value %>
+    <div class="field form-group">
+      <%= form.label :iso_speed_ratings, class: 'col-md-2' %>
+      <%= form.number_field :iso_speed_ratings, id: :photo_iso_speed_ratings, class: 'col-md-4' %>
     </div>
 
-    <div class="field">
-      <%= form.label :max_aperture_value %>
-      <%= form.text_field :max_aperture_value, id: :photo_max_aperture_value %>
+    <div class="field form-group">
+      <%= form.label :aperture_value, class: 'col-md-2' %>
+      <%= form.text_field :aperture_value, id: :photo_aperture_value, class: 'col-md-4' %>
     </div>
 
-    <div class="field">
-      <%= form.label :focal_length %>
-      <%= form.text_field :focal_length, id: :photo_focal_length %>
+    <div class="field form-group">
+      <%= form.label :max_aperture_value, class: 'col-md-2' %>
+      <%= form.text_field :max_aperture_value, id: :photo_max_aperture_value, class: 'col-md-4' %>
     </div>
 
-    <div class="field">
-      <%= form.label :album_id %>
-      <%= form.text_field :album_id, id: :photo_album_id %>
+    <div class="field form-group">
+      <%= form.label :focal_length, class: 'col-md-2' %>
+      <%= form.text_field :focal_length, id: :photo_focal_length, class: 'col-md-4' %>
+    </div>
+
+    <div class="field form-group">
+      <%= form.label :album_id, class: 'col-md-2' %>
+      <%= form.text_field :album_id, id: :photo_album_id, class: 'col-md-4' %>
     </div>
 
     <div class="actions">
-      <%= form.submit %>
+      <%= form.submit class: 'btn btn-default col-md-2 col-md-offset-2' %>
     </div>
 <% end %>
