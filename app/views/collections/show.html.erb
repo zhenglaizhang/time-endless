@@ -15,7 +15,7 @@
 </p>
 
 <h2>Albums</h2>
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Title</th>
@@ -29,9 +29,9 @@
       <tr>
         <td><%= album.title %></td>
         <td><%= album.description %></td>
-        <td><%= link_to 'Show', collection_album_url(@collection, album) %></td>
-        <td><%= link_to 'Edit', edit_collection_album_path(@collection, album) %></td>
-        <td><%= link_to "Destroy", collection_album_path(@collection, album),
+        <td><%= link_to 'Show', album_url(album) %></td>
+        <td><%= link_to 'Edit', edit_album_path(album) %></td>
+        <td><%= link_to "Destroy", album_path(album),
       :method => :delete, :confirm => "Really?" %></td>
       </tr>
     <% end %>

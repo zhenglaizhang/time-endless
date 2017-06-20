@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
+  <strong>Name:</strong>
   <%= @album.title %>
 </p>
 
@@ -10,5 +10,44 @@
   <%= @album.description %>
 </p>
 
-<%= link_to 'Edit', edit_collection_album_path(@album) %> |
-<%= link_to 'Back', collection_path %>
+<h2>Photos</h2>
+<table class="table">
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @album.photos.each do |photo| %>
+      <tr>
+        <td><%= photo.name %></td>
+        <td><%= photo.description %></td>
+        <td><%= link_to 'Show', album_photo_url(@album, photo) %></td>
+        <td><%= link_to 'Edit', edit_album_photo_path(@album, photo) %></td>
+        <td><%= link_to "Destroy", album_path(photo),
+                        :method => :delete, :confirm => "Really?" %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<h2>Add a Photo</h2>
+<%= form_for [@album, @album.photos.build] do |f| %>
+    <p>
+      <%= f.label :name %><br>
+      <%= f.text_field :name %>
+    </p>
+    <p>
+      <%= f.label :description %><br>
+      <%= f.text_area :description %>
+    </p>
+    <p>
+      <%= f.submit %>
+    </p>
+<% end %>
+
+<%= link_to 'Edit', edit_album_path(@album) %> |
+<%= link_to 'Back', album_path(@album) %>
