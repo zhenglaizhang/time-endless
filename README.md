@@ -12,6 +12,17 @@ rails g migration add_image_to_photos image:string
 rails g migration add_image_to_collection image:string
 ```
 
+
+## Run
+
+```
+# ubuntu
+sudo apt-get install libmagickwand-dev
+bundle install
+rails db:migrate
+rails s
+```
+
 ## Deps
 
 https://github.com/carrierwaveuploader/carrierwave
