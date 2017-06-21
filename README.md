@@ -53,3 +53,13 @@ Things you may want to cover:
 
 - Try `git rm -r --cached .idea` in your terminal. It disables the change tracking.
 
+
+## Deploy
+
+```
+# CentOS
+yum install docker
+systemctl  enable docker.service
+systemctl  start docker.service
+
+```
